@@ -1,0 +1,100 @@
+2025-01-20 00:49:37,968 - pciSeq.src.core.utils.io_utils - INFO - Writing to C:\Users\skgtdni\AppData\Local\Temp\pciSeq\pciSeq.log
+2025-01-20 00:49:37,969 - pciSeq.src.diagnostics.utils - INFO - Checking Redis server status...
+2025-01-20 00:49:38,017 - pciSeq.src.diagnostics.utils - INFO - Redis is installed and running.
+2025-01-20 00:49:38,093 - pciSeq.src.validation.input_validation - WARNING - Found 5 genes that are not included in the single cell data
+2025-01-20 00:49:38,120 - pciSeq.src.validation.input_validation - WARNING - Removed from spots: ['Prss23', 'Tafa1', 'Plpp4', 'Yjefn3', 'Ccn2']
+2025-01-20 00:49:38,122 - pciSeq.src.validation.input_validation - WARNING - InsideCellBonus set to False for 3D data
+2025-01-20 00:49:38,122 - pciSeq.app - INFO - Preprocessing data
+2025-01-20 00:51:35,909 - pciSeq.src.preprocess.plane_management - WARNING - Removed 2889 single-plane cells from 65 planes.
+2025-01-20 00:51:48,237 - pciSeq.src.preprocess.label_processing - WARNING - Non-sequential cell labels detected
+2025-01-20 00:52:00,994 - pciSeq.src.preprocess.label_processing - WARNING - Labels have been renumbered for sequential labelling
+2025-01-20 00:52:16,143 - pciSeq.src.preprocess.utils - INFO - Number of spots passed-in: 266818
+2025-01-20 00:52:16,181 - pciSeq.src.preprocess.utils - INFO - Number of segmented cells: 23265
+2025-01-20 00:52:16,181 - pciSeq.src.preprocess.utils - INFO - Image dimensions: 68 planes, 6444px × 6417px
+2025-01-20 00:53:32,222 - pciSeq.app - INFO - Initializing VarBayes model
+2025-01-20 00:53:34,289 - pciSeq.src.diagnostics.controller.diagnostic_controller - INFO - Diagnostics system initialized successfully
+2025-01-20 00:53:34,292 - pciSeq.src.diagnostics.controller.diagnostic_controller - INFO - Redis database flushed on startup
+2025-01-20 00:53:34,330 - pciSeq.src.diagnostics.controller.diagnostic_controller - INFO - Enabling keyspace events... OK
+2025-01-20 00:53:34,354 - pciSeq.src.diagnostics.controller.diagnostic_controller - INFO - Started dashboard with PID: 1960
+2025-01-20 00:53:34,756 - pciSeq.src.core.datatypes - INFO - Single cell data passed-in have 119 genes and 12915 cells
+2025-01-20 00:53:34,756 - pciSeq.src.core.datatypes - INFO - Single cell data: Keeping counts for the gene panel of 118 only
+2025-01-20 00:53:34,814 - pciSeq.src.core.datatypes - INFO - Single cell data: Grouping gene counts by cell type. Aggregating function is the mean.
+2025-01-20 00:53:34,825 - pciSeq.src.core.datatypes - INFO - Grouped single cell data have 118 genes and 37 cell types
+2025-01-20 00:53:34,829 - pciSeq.app - INFO - Starting cell typing algorithm
+2025-01-20 00:53:45,552 - pciSeq.src.core.main - INFO - Iteration 0, mean prob change 1.000000
+2025-01-20 00:53:49,665 - pciSeq.src.core.main - INFO - Iteration 1, mean prob change 0.934871
+2025-01-20 00:53:53,755 - pciSeq.src.core.main - INFO - Iteration 2, mean prob change 0.947463
+2025-01-20 00:53:57,852 - pciSeq.src.core.main - INFO - Iteration 3, mean prob change 0.862543
+2025-01-20 00:53:57,950 - pciSeq.src.core.summary - INFO - Start collecting data ...
+2025-01-20 00:54:09,184 - pciSeq.src.core.summary - INFO - Data collected!
+2025-01-20 00:54:10,107 - pciSeq.src.diagnostics.controller.diagnostic_controller - INFO - Terminated dashboard with PID: 1960
+2025-01-20 00:54:10,699 - pciSeq.src.core.utils.cell_utils - INFO - Restored original cell segmentation labels
+2025-01-20 00:54:12,204 - pciSeq.src.core.utils.io_utils - INFO - Saved at C:\Users\skgtdni\AppData\Local\Temp\pciSeq\data\cellData.tsv
+2025-01-20 00:54:14,240 - pciSeq.src.core.utils.io_utils - INFO - Saved at C:\Users\skgtdni\AppData\Local\Temp\pciSeq\data\geneData.tsv
+2025-01-20 00:54:14,915 - pciSeq.src.core.utils.io_utils - INFO - Saved at C:\Users\skgtdni\AppData\Local\Temp\pciSeq\data\cellBoundaries.tsv
+2025-01-20 00:54:14,958 - pciSeq.src.core.utils.io_utils - INFO - Saved at C:\Users\skgtdni\AppData\Local\Temp\pciSeq\data\debug\pciSeq.pickle
+2025-01-20 00:54:17,465 - pciSeq.src.viewer.utils - INFO - viewer code (3D) copied from d:\home\dimitris\onedrive - university college london\dev\python\pciseq\pciSeq\static\3D to C:\Users\skgtdni\AppData\Local\Temp\pciSeq
+2025-01-20 00:54:17,466 - pciSeq.src.viewer.utils - INFO - viewer config saved at C:\Users\skgtdni\AppData\Local\Temp\pciSeq\viewer\libs\config.js
+2025-01-20 00:54:17,467 - pciSeq.src.viewer.utils - INFO - cell class color scheme saved at C:\Users\skgtdni\AppData\Local\Temp\pciSeq\viewer\libs\classConfig.js
+2025-01-20 00:54:17,473 - pciSeq.src.viewer.utils - INFO - glyph color scheme saved at C:\Users\skgtdni\AppData\Local\Temp\pciSeq\viewer\libs\glyphConfig.js
+2025-01-20 00:54:17,842 - pciSeq.src.viewer.utils - INFO - octree saved at: C:\Users\skgtdni\AppData\Local\Temp\pciSeq\data
+2025-01-20 00:54:22,232 - pciSeq.src.viewer.utils - INFO - saved at C:\Users\skgtdni\AppData\Local\Temp\pciSeq\data\cellData_rgb.tsv
+2025-01-20 00:54:22,251 - pciSeq.src.viewer.utils - INFO - saving at C:\Users\skgtdni\AppData\Local\Temp\pciSeq\data\cell_gene_counts
+2025-01-20 00:54:37,658 - pciSeq.src.viewer.run_flask - INFO - Launching viewer. Serving directory C:\Users\skgtdni\AppData\Local\Temp\pciSeq 
+2025-01-20 00:54:37,675 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5104
+2025-01-20 00:54:37,676 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-20 00:54:38,676 - pciSeq.src.viewer.run_flask - INFO - Platform is Windows
+2025-01-20 00:54:38,677 - pciSeq.src.viewer.run_flask - INFO - Chrome path: C:/Program Files (x86)/Google/Chrome/Application/chrome.exe
+2025-01-20 00:54:38,967 - pciSeq.src.viewer.run_flask - INFO - Locating template 'index.html':
+    1: trying loader of application 'pciSeq.src.viewer.run_flask'
+       class: jinja2.loaders.FileSystemLoader
+       encoding: 'utf-8'
+       followlinks: False
+       searchpath:
+         - C:\Users\skgtdni\AppData\Local\Temp\pciSeq
+       -> found ('C:\\Users\\skgtdni\\AppData\\Local\\Temp\\pciSeq\\index.html')
+2025-01-20 00:54:38,979 - werkzeug - INFO - 127.0.0.1 - - [20/Jan/2025 00:54:38] "GET / HTTP/1.1" 200 -
+2025-01-20 00:54:40,701 - werkzeug - INFO - 127.0.0.1 - - [20/Jan/2025 00:54:40] "GET /viewer/build/potree/potree.css HTTP/1.1" 200 -
+2025-01-20 00:54:40,704 - werkzeug - INFO - 127.0.0.1 - - [20/Jan/2025 00:54:40] "GET /viewer/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-01-20 00:54:40,707 - werkzeug - INFO - 127.0.0.1 - - [20/Jan/2025 00:54:40] "GET /viewer/libs/spectrum/spectrum.css HTTP/1.1" 200 -
+2025-01-20 00:54:40,710 - werkzeug - INFO - 127.0.0.1 - - [20/Jan/2025 00:54:40] "GET /viewer/libs/jquery-ui/jquery-ui.min.css HTTP/1.1" 200 -
+2025-01-20 00:54:40,711 - werkzeug - INFO - 127.0.0.1 - - [20/Jan/2025 00:54:40] "GET /viewer/libs/openlayers3/ol.css HTTP/1.1" 200 -
+2025-01-20 00:54:40,713 - werkzeug - INFO - 127.0.0.1 - - [20/Jan/2025 00:54:40] "GET /viewer/libs/jstree/themes/mixed/style.css HTTP/1.1" 200 -
+2025-01-20 00:54:40,722 - werkzeug - INFO - 127.0.0.1 - - [20/Jan/2025 00:54:40] "GET /viewer/css/progress.css HTTP/1.1" 200 -
+2025-01-20 00:54:40,726 - werkzeug - INFO - 127.0.0.1 - - [20/Jan/2025 00:54:40] "GET /viewer/css/index.css HTTP/1.1" 200 -
+2025-01-20 00:54:40,731 - werkzeug - INFO - 127.0.0.1 - - [20/Jan/2025 00:54:40] "[33mGET /vakata-jstree/dist/themes/default/style.css HTTP/1.1[0m" 404 -
+2025-01-20 00:54:40,735 - werkzeug - INFO - 127.0.0.1 - - [20/Jan/2025 00:54:40] "GET /viewer/libs/jquery/jquery-3.1.1.min.js HTTP/1.1" 200 -
+2025-01-20 00:54:40,740 - werkzeug - INFO - 127.0.0.1 - - [20/Jan/2025 00:54:40] "GET /viewer/libs/spectrum/spectrum.js HTTP/1.1" 200 -
+2025-01-20 00:54:40,742 - werkzeug - INFO - 127.0.0.1 - - [20/Jan/2025 00:54:40] "GET /viewer/libs/jquery-ui/jquery-ui.min.js HTTP/1.1" 200 -
+2025-01-20 00:54:40,745 - werkzeug - INFO - 127.0.0.1 - - [20/Jan/2025 00:54:40] "GET /viewer/libs/other/BinaryHeap.js HTTP/1.1" 200 -
+2025-01-20 00:54:40,748 - werkzeug - INFO - 127.0.0.1 - - [20/Jan/2025 00:54:40] "GET /viewer/libs/tween/tween.min.js HTTP/1.1" 200 -
+2025-01-20 00:54:40,748 - werkzeug - INFO - 127.0.0.1 - - [20/Jan/2025 00:54:40] "GET /viewer/libs/proj4/proj4.js HTTP/1.1" 200 -
+2025-01-20 00:54:40,757 - werkzeug - INFO - 127.0.0.1 - - [20/Jan/2025 00:54:40] "GET /viewer/libs/openlayers3/ol.js HTTP/1.1" 200 -
+2025-01-20 00:54:40,761 - werkzeug - INFO - 127.0.0.1 - - [20/Jan/2025 00:54:40] "GET /viewer/libs/i18next/i18next.js HTTP/1.1" 200 -
+2025-01-20 00:54:40,776 - werkzeug - INFO - 127.0.0.1 - - [20/Jan/2025 00:54:40] "GET /viewer/libs/jstree/jstree.js HTTP/1.1" 200 -
+2025-01-20 00:54:40,787 - werkzeug - INFO - 127.0.0.1 - - [20/Jan/2025 00:54:40] "GET /viewer/build/potree/potree.js HTTP/1.1" 200 -
+2025-01-20 00:54:40,790 - werkzeug - INFO - 127.0.0.1 - - [20/Jan/2025 00:54:40] "GET /viewer/libs/plasio/js/laslaz.js HTTP/1.1" 200 -
+2025-01-20 00:54:40,805 - werkzeug - INFO - 127.0.0.1 - - [20/Jan/2025 00:54:40] "GET /viewer/libs/bootstrap.min.js HTTP/1.1" 200 -
+2025-01-20 00:54:40,827 - werkzeug - INFO - 127.0.0.1 - - [20/Jan/2025 00:54:40] "GET /viewer/libs/d3/d3.v4.js HTTP/1.1" 200 -
+2025-01-20 00:54:40,856 - werkzeug - INFO - 127.0.0.1 - - [20/Jan/2025 00:54:40] "GET /viewer/libs/dt.js HTTP/1.1" 200 -
+2025-01-20 00:54:40,858 - werkzeug - INFO - 127.0.0.1 - - [20/Jan/2025 00:54:40] "GET /viewer/libs/donut.js HTTP/1.1" 200 -
+2025-01-20 00:54:40,867 - werkzeug - INFO - 127.0.0.1 - - [20/Jan/2025 00:54:40] "GET /viewer/libs/progress.js HTTP/1.1" 200 -
+2025-01-20 00:54:40,878 - werkzeug - INFO - 127.0.0.1 - - [20/Jan/2025 00:54:40] "GET /viewer/libs/glyphConfig.js HTTP/1.1" 200 -
+2025-01-20 00:54:40,880 - werkzeug - INFO - 127.0.0.1 - - [20/Jan/2025 00:54:40] "GET /viewer/libs/classConfig.js HTTP/1.1" 200 -
+2025-01-20 00:54:41,738 - werkzeug - INFO - 127.0.0.1 - - [20/Jan/2025 00:54:41] "GET /viewer/libs/initScene.module.js HTTP/1.1" 200 -
+2025-01-20 00:54:41,739 - werkzeug - INFO - 127.0.0.1 - - [20/Jan/2025 00:54:41] "GET /viewer/libs/my_utils.js HTTP/1.1" 200 -
+2025-01-20 00:54:41,740 - werkzeug - INFO - 127.0.0.1 - - [20/Jan/2025 00:54:41] "GET /viewer/libs/three.js/build/three.module.js HTTP/1.1" 200 -
+2025-01-20 00:54:41,741 - werkzeug - INFO - 127.0.0.1 - - [20/Jan/2025 00:54:41] "GET /viewer/libs/dataLoader.module.js HTTP/1.1" 200 -
+2025-01-20 00:54:41,741 - werkzeug - INFO - 127.0.0.1 - - [20/Jan/2025 00:54:41] "GET /viewer/libs/config.module.js HTTP/1.1" 200 -
+2025-01-20 00:54:41,958 - werkzeug - INFO - 127.0.0.1 - - [20/Jan/2025 00:54:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-20 00:54:54,343 - werkzeug - INFO - 127.0.0.1 - - [20/Jan/2025 00:54:54] "[36mGET /viewer/build/potree/potree.css HTTP/1.1[0m" 304 -
+2025-01-20 00:54:54,349 - werkzeug - INFO - 127.0.0.1 - - [20/Jan/2025 00:54:54] "[36mGET /viewer/libs/jquery-ui/jquery-ui.min.css HTTP/1.1[0m" 304 -
+2025-01-20 00:54:54,350 - werkzeug - INFO - 127.0.0.1 - - [20/Jan/2025 00:54:54] "[36mGET /viewer/libs/spectrum/spectrum.css HTTP/1.1[0m" 304 -
+2025-01-20 00:54:54,353 - werkzeug - INFO - 127.0.0.1 - - [20/Jan/2025 00:54:54] "[36mGET /viewer/libs/openlayers3/ol.css HTTP/1.1[0m" 304 -
+2025-01-20 00:54:54,358 - werkzeug - INFO - 127.0.0.1 - - [20/Jan/2025 00:54:54] "[36mGET /viewer/libs/jstree/themes/mixed/style.css HTTP/1.1[0m" 304 -
+2025-01-20 00:54:54,361 - werkzeug - INFO - 127.0.0.1 - - [20/Jan/2025 00:54:54] "[36mGET /viewer/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-01-20 00:54:54,363 - werkzeug - INFO - 127.0.0.1 - - [20/Jan/2025 00:54:54] "[36mGET /viewer/css/progress.css HTTP/1.1[0m" 304 -
+2025-01-20 00:54:54,366 - werkzeug - INFO - 127.0.0.1 - - [20/Jan/2025 00:54:54] "[33mGET /vakata-jstree/dist/themes/default/style.css HTTP/1.1[0m" 404 -
+2025-01-20 00:54:54,370 - werkzeug - INFO - 127.0.0.1 - - [20/Jan/2025 00:54:54] "[36mGET /viewer/css/index.css HTTP/1.1[0m" 304 -
+2025-01-20 00:54:54,709 - werkzeug - INFO - 127.0.0.1 - - [20/Jan/2025 00:54:54] "GET /viewer/build/potree/potree.js.map HTTP/1.1" 200 -
