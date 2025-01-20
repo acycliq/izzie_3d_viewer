@@ -4,7 +4,7 @@ import * as THREE from "./libs/three.js/build/three.module.js";
 const MATERIAL_PROPS = {
     FRONT: {
         side: THREE.FrontSide,
-        opacity: 0.05, // from 0.4
+        opacity: 0.5, // from 0.4
         name: 'front_mesh'
     },
     BACK: {
@@ -182,7 +182,7 @@ function createInstancedMesh(geometry, material, counts) {
 }
 
 function updateInstances(instancedMesh, data, counts) {
-    const scale = { x: 10, y: 10, z: 10 };
+    // const scale = { x: 10, y: 10, z: 10 };
     
     _perfMonitor.start();
     
@@ -190,7 +190,7 @@ function updateInstances(instancedMesh, data, counts) {
         const item = data[i];
         
         _dummy.position.set(item.x, item.y, item.z);
-        _dummy.scale.set(scale.x * 0.99, scale.y * 0.99, scale.z * 0.99);
+        _dummy.scale.set(item.sphere_scale[0] * 0.99, item.sphere_scale[1] * 0.99, item.sphere_scale[2] * 0.99);
         _dummy.updateMatrix();
         
         instancedMesh.setMatrixAt(i, _dummy.matrix);

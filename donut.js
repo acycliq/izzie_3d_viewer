@@ -260,12 +260,12 @@ function donutchart(dataset) {
     var percentFormat = d3.format('.2%');
 
     var data = []
-    for (var i=0; i < dataset.classes.length; i++) {
+    for (var i=0; i < dataset.class_id.length; i++) {
         data.push({
             // value: Math.floor(dataset[i].value*10000)/100,
             // label: dataset[i].label,
             value: dataset.class_prob[i],
-            label: "class_" + dataset.classes[i],
+            label: "class_" + dataset.class_id[i],
         })
     }
 
@@ -275,7 +275,7 @@ function donutchart(dataset) {
     var sdata = [];
     var ClassName;
     for (var i = 0; i < dataset.class_prob.length; i++) {
-        dataset.class_prob[i] < 0.02? ClassName = 'Other': ClassName = "class_" + dataset.classes[i]
+        dataset.class_prob[i] < 0.02? ClassName = 'Other': ClassName = "class_" + dataset.class_id[i]
         sdata.push({
             Prob: dataset.class_prob[i],
             labels: ClassName,

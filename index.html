@@ -226,7 +226,7 @@
         viewer.setFOV(60);
         viewer.setPointBudget(2_000_000);
         viewer.loadSettingsFromURL();
-        viewer.setDescription("merfish data: Brad Lowell lab (75million spots)");
+        // viewer.setDescription("Some title goes here");
         viewer.setFilterFloatArray([]);
 
         // Load point cloud
@@ -238,7 +238,7 @@
             let pointcloud = e.pointcloud;
             let material = pointcloud.material;
 
-            material.size = 0.002;
+            material.size = 0.02;
             material.pointSizeType = Potree.PointSizeType.ADAPTIVE;
             material.shape = Potree.PointShape.CIRCLE;
             material.activeAttributeName = "rgba";
